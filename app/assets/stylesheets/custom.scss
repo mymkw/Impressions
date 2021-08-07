@@ -1,2 +1,217 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+//header
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2053&q=80);
+    background-position: left center;
+    background-color: #0bd;
+    background-blend-mode: hard-light;
+    padding: 0 4%;
+    div{
+      display: flex;
+    }
+}
+.header-icon img{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+//logo
+
+#logo {
+  margin-right: 10px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+h1{
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+// navbar
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+    
+    li {
+      padding-left: 0;
+      margin-left: 36px;
+    }
+    
+    a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    
+    a:hover {
+    color: #f56500;
+    }
+}
+
+
+//sidebar
+
+.sidebar {
+    // display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 34px 50px 0 50px;
+    width: 200px;
+    padding: 0;
+    
+    li {
+      border-bottom: 0.5px rgba(0,0,0,.25) solid;
+    }
+    
+    li:hover{
+;
+    }
+    
+    a {
+    color: #432;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    display: block;
+    }
+    
+    a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #f56500
+    }
+}
+
+main{
+  flex: 1;
+  display: flex;
+}
+
+ul{
+  list-style: none;
+}
+ul.posts{
+  padding-left: 0;
+}
+
+.content{
+  width: 60%;
+  margin: 50px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    display: flex; //フレックスボックスに有効に
+    flex-flow: column; //要素を縦に並べる
+    min-height: 100vh; //最小でも画面の高さ分のbodyの高さを担保する
+}
+
+footer{
+  height: 30px;
+  background: #696969;
+  text-align: center;
+  margin-top : 1rem;
+  padding: 26px 0;
+  
+  p{
+     color: #fff;
+     font-size: 0.875rem;
+   }
+ }
+ 
+
+
+//form
+.form{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    input{
+    height: 2.4em;
+    width: 500px;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    }
+    
+    input:focus{
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+    }
+    
+    textarea{
+    height: 10em;
+    width: 500px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    resize: none;
+    }
+    
+    textarea:focus{
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+    }
+}
+.gravatar {
+  margin : 1rem;
+  border-radius: 100%;
+}
+.content-icon img{
+  width: 50px;
+  height: 50px;
+}
+
+//post form
+.post-box {
+  display: flex;
+  margin-top: 1rem;
+  padding: 10px;
+  border-bottom: 0.5px rgba(0,0,0,.25) solid;
+}
+.post-wrapper{
+  padding: 0 5px;
+}
+a.post-username{
+}
+
+.btn-design,
+a.btn-design {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn-design:hover,
+a.btn-design:hover {
+  color: #fff;
+  background: #f56500;
+}

@@ -3,10 +3,12 @@
 <div>
   <div>
     <%= form_for(:password_reset, url: password_resets_path) do |f| %>
+      <div class="form">
       <%= f.label :email %>
       <%= f.email_field :email %>
+      </div>
 
-      <%= f.submit "Submit" %>
+      <%= f.submit "Submit", class: "btn btn-design" %>
     <% end %>
   </div>
 </div>

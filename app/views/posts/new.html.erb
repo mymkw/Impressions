@@ -1,0 +1,15 @@
+<h1>New Post</h1>
+
+<%= form_for(@post) do |f| %>
+  <%#= hidden_field_tag :user_id, current_user.user_id %>
+  <div class="form">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  </div>
+  <div class="form">
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+  </div>
+  
+  <%= f.submit "Post", class: "btn btn-design" %>
+<% end %>

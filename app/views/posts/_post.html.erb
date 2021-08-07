@@ -1,0 +1,23 @@
+<li class="post-box">
+
+  <div class="icon">
+    <%= link_to gravatar_for(post.user), post.user, class: "content-icon" %>  
+  </div>
+  <div class="post-wrapper">  
+  <div class="box-title">
+    <%= link_to post.user.name, post.user, class: "post-username" %>
+    <%= post.title %>
+  </div>
+  
+  <p class="post-body">
+    <%= post.body %>
+  </p>
+  
+  <div class="post-footer">
+    <% if current_user?(post.user) %>
+      <%= link_to "edit", edit_post_path(post) %> | 
+      <%= link_to "delete", post, method: :delete, data:{ confirm: "You sure?" }, class: "post-delete" %>
+    <% end %>
+  </div>
+  </div>
+</li>

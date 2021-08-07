@@ -3,22 +3,20 @@
 
 <div>
   <div>
+    <a href="http://gravatar.com/emails" target="_blank"><%= gravatar_for @user %></a>
+    <a href="http://gravatar.com/emails" target="_blank">change</a>
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
-
+      <div class="form">
       <%= f.label :name %>
       <%= f.text_field :name %>
-
+      </div>
+      <div class="form">
       <%= f.label :email %>
       <%= f.email_field :email %>
+      </div>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation %>
-
-      <%= f.submit "Save changes" %>
+      <%= f.submit "Save changes", class: "btn btn-design" %>
     <% end %>
   </div>
 </div>
